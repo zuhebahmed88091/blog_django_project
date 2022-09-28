@@ -18,6 +18,7 @@ class PostListView(ListView):
 
 class PostDetailView(DetailView):
     model = Post
+    
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
