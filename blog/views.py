@@ -16,7 +16,7 @@ def home(request):
         # 'posts': posts
         'posts': Post.objects.all()
 
-        
+
     }
     return render(request, 'blog/home.html', context)
 
